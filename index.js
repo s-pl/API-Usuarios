@@ -5,13 +5,20 @@ const f = require("./scripts/fecha")
 const dotenv = require('dotenv').config()
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const usuariosRoutes = require('./routes/usuariosPost');
+const actualizarUsuarioRoute = require('./routes/actualizarUsuarios');
+const eliminarUsuariosRoute = require('./routes/eliminarUsuarios');
+const añadirUsuarioRoute = require('./routes/añadirUsuario');
+const consultarUsuariosRoute = require('./routes/consultarUsuarios');
 
 app.use(express.static('public'));
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(cors());
-app.use('/usuarios', usuariosRoutes);
+
+app.use('/usuarios', añadirUsuarioRoute);
+app.use('/usuarios', eliminarUsuariosRoute );
+app.use('/usuarios', actualizarUsuarioRoute);
+app.use('/usuarios', consultarUsuariosRoute);
 
 
 app.get('/', function(req, res) {
