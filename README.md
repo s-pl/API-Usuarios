@@ -56,7 +56,7 @@ La API proporciona un conjunto de servicios para la gestión de usuarios en un s
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Requerido**.  DNI del usuario|
 | `key`      | `string` | **Requerido**.  Tu clave secreta|
-| `NuevaFecha`      | `string` | **Requerido**.  La fehca de renovación|
+| `NuevaFecha`      | `string` | **Requerido**.  La fecha de renovación|
 
 
 
