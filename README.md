@@ -32,7 +32,7 @@ El directorio ```public``` no es necesario para el funcionamiento de la API y es
   POST /usuarios/eliminar-usuario
 ```
 
-| Parameter | Type     | Description                       |
+| Parametro | Tipo     | Descripcion                       |
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Requerido**.  DNI del usuario|
 | `key`      | `string` | **Requerido**.  Tu clave secreta|
@@ -43,7 +43,7 @@ El directorio ```public``` no es necesario para el funcionamiento de la API y es
   POST /usuarios/consultar-usuario
 ```
 
-| Parameter | Type     | Description                       |
+| Parametro | Tipo     | Descripcion                      |
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Requerido**.  DNI del usuario|
 | `key`      | `string` | **Requerido**.  Tu clave secreta|
@@ -54,7 +54,7 @@ El directorio ```public``` no es necesario para el funcionamiento de la API y es
   POST /usuarios/actualizar-usuario
 ```
 
-| Parameter | Type     | Description                       |
+| Parametro | Tipo     | Descripcion                       |
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Requerido**.  DNI del usuario|
 | `key`      | `string` | **Requerido**.  Tu clave secreta|
