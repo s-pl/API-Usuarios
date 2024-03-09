@@ -3,6 +3,8 @@
 
 La API proporciona un conjunto de servicios para la gestión de usuarios en un sistema. Permite realizar operaciones como añadir usuarios, eliminar usuarios, consultar información de usuarios y actualizar datos de usuarios.
 
+El directorio ```public``` no es necesario para el funcionamiento de la API y es solo una simple demostración de cómo funciona, en ningun caso estos archivos deberian ser usados en el producto final.
+
 
 
 
