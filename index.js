@@ -9,6 +9,7 @@ const actualizarUsuarioRoute = require('./routes/actualizarUsuarios');
 const eliminarUsuariosRoute = require('./routes/eliminarUsuarios');
 const añadirUsuarioRoute = require('./routes/añadirUsuario');
 const consultarUsuariosRoute = require('./routes/consultarUsuarios');
+const consultaGeneralRoute = require('./routes/consultaGeneral');
 
 app.use(express.static('public'));
 app.use(express.json({ limit: '10mb' }));
@@ -19,6 +20,7 @@ app.use('/usuarios', añadirUsuarioRoute);
 app.use('/usuarios', eliminarUsuariosRoute );
 app.use('/usuarios', actualizarUsuarioRoute);
 app.use('/usuarios', consultarUsuariosRoute);
+app.use('/usuarios', consultaGeneralRoute);
 
 
 app.get('/', function(req, res) {
@@ -30,6 +32,9 @@ app.get('/a-usuario', function(req, res) {
 
 app.get('/eliminar-usuario', function(req, res) {
     res.sendFile(__dirname + "/public/eliminar-usuario.html")
+})
+app.get('/consulta-general', function(req, res) {
+  res.sendFile(__dirname + "/public/consultageneral.html")
 })
 
 app.get('/actualizar-usuario', function(req, res) {

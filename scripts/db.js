@@ -114,11 +114,27 @@ function actualizar(identificacion, nuevaFecha, callback) {
         callback(error, null);
     }
 }
+function consultaGeneral(callback) {
+    try {
+        base_datos.all("SELECT * FROM usuarios", (err, rows) => {
+            if (err) {
+                console.error('Error en la consulta general:', err);
+                callback(err, null);
+            } else {
+                callback(null, rows);
+            }
+        });
+    } catch (error) {
+        console.error('Error en la consulta general:', error);
+        callback(error, null);
+    }
+}
 
 
 module.exports = {
     añadir,
     eliminar,
     consultar,
-    actualizar
+    actualizar,
+    consultaGeneral
 };
