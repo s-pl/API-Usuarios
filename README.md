@@ -5,6 +5,8 @@ La API proporciona un conjunto de servicios para la gestión de usuarios en un s
 
 El directorio ```public``` no es necesario para el funcionamiento de la API y es solo una simple demostración de cómo funciona, en ningun caso estos archivos deberian ser usados en el producto final.
 
+![](https://texno.blog/upload/blogs/crud-nedir-63860e31bc555.png)
+
 
 
 
